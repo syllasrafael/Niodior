@@ -1,0 +1,86 @@
+<div class="module_B wrap-image backround">
+  
+</div>
+<div>
+  <h3>ENCONTRE-NOS NO MAPA</h3>
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe
+        title="Maps"
+        class="gmap_iframe"
+        width="100%"
+        src="https://maps.google.com/maps?width=969&amp;height=400&amp;hl=en&amp;q=keweseki&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      ></iframe
+      ><a href="https://connectionsgame.org/">Connections NYT</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-wrap">
+  <div class="contact-us" data-aos="fade-right" data-aos-duration="1000">
+    <h4>Contactos-nos</h4>
+    <p>Tem dúvida? Estamos aqui para ajudar.</p>
+    <p type="email">
+      <fa-icon [icon]="faEnvelope"></fa-icon>
+      <a id="Email" href="mailto:comercial@nidiorgrupo.com">
+        comercial@nidiorgrupo.com</a
+      >
+    </p>
+    <p>
+      <fa-icon [icon]="faPhone"></fa-icon>
+      <a href="+244925548888" target="_blank"> +244 925-548-888</a>
+    </p>
+    <address>
+      <p>
+        <fa-icon [icon]="faLocationDot"></fa-icon> 1234 Rua Kikuxi, Cidade
+        Luanda, 29FG+9F
+      </p>
+    </address>
+  </div>
+  <div>
+    <form data-aos="fade-left" data-aos-duration="1000">
+      <div class="fieldset">
+        <div class="label-position">
+          <label for="nome">Primeiro nome</label>
+          <input type="text" name="nome" id="nome" [(ngModel)]="nome" />
+        </div>
+    
+        <div class="label-position">
+          <label for="sobreNome">Ultimo nome</label>
+          <input type="text" name="sobreNome" id="sobreNome" [(ngModel)]="sobreNome" />
+        </div>
+      </div>
+    
+      <div class="fieldset">
+        <div class="label-position">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" [(ngModel)]="email" />
+        </div>
+    
+        <div class="label-position">
+          <label for="Telefone">Telefone</label>
+          <input type="text" name="tel" id="Telefone" [(ngModel)]="tel" />
+        </div>
+      </div>
+    
+      <div class="wrap-message">
+        <p>Mensagem</p>
+        <textarea
+          placeholder="Digite sua mensagem..."
+          maxlength="1000"
+          minlength="100"
+          rows="7"
+          id="conteudo"
+          name="conteudo"
+          [(ngModel)]="conteudo"
+        ></textarea>
+      </div>
+    
+      <div class="wrap-button">
+        <button type="submit" (click)="buttonClick()">Enviar</button>
+      </div>
+    </form>    
+    
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<header>
+    <div id="header">
+        <a routerLink="/"><img src="../../../assets/icon/niodior-icon.svg" alt="Niodior Icon" type="image/svg"></a>
+        <nav id="nav">
+           <button
+           type="button"
+           aria-label="Abrir Menu"
+           id="btn-mobile"
+           aria-haspopup="true"
+           aria-controls="menu"
+           aria-expanded="false">
+           <span id="hamburger"></span>
+         </button>
+           <ul id="menu">
+               <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
+               <li><a routerLink="/servico">Serviço</a></li>
+               <li [routerLinkActive]="'active'"><a routerLink="/about">Quem Somos</a></li>
+               <li><a >Notícias</a></li>
+               <li><a routerLink="/posvenda">Pós-Venda</a></li>
+               <li [routerLinkActive]="'active'"><a routerLink="/contact">Contactos</a></li>
+           </ul>
+        </nav>
+        <div id="login-btn">
+            <button type="button">
+            <span class="user--icon">
+                <fa-icon [icon]="faUser"></fa-icon>
+            </span>
+                <span class="login--text">Login</span>
+            </button>
+         </div>
+       </div>
+</header>

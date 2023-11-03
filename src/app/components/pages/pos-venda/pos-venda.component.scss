@@ -1,0 +1,47 @@
+.module_B.wrap-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  .module_B.backround {
+    background-image: url("../../../../assets/image-parallax/corridas-de-automoveis-em-competicoes-esportivas.jpg");
+  }
+  
+
+.ExposeCar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 40px;
+    margin: 3em 0;
+    
+    // grid-column-gap: 50px;
+    // grid-row-gap: 70px;
+    // grid-template-rows: auto;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-auto-columns: 1fr;
+    // grid-auto-flow: row;
+    // display: grid;
+    // height: -webkit-fill-available;
+    // padding: 3em;
+
+    img {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+  }

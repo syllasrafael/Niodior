@@ -1,0 +1,461 @@
+.module_B, .module_C {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+
+.module_B.backround {
+  background-image: url("../../../../assets/estrada-asfaltada-e-floresta.jpg");
+}
+
+.module_C.backround.Dealership{
+  background-image: url("../../../../assets/image-parallax/interior-carro-estudo-1.jpg");
+}
+
+.container {
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.inner-page {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.row {
+  grid-column-gap: 43px;
+  grid-row-gap: 70px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  display: grid;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.container-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content,
+.right-content {
+  padding-top: 15px;
+}
+.for-you,
+.thing-to-consider {
+  padding: 0 20px;
+  h3 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #c7081b;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    span {
+      float: left;
+      color: #c7081b;
+      font-size: 70px;
+      line-height: 50px;
+      padding-right: 8px;
+    }
+  }
+
+  ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 19px;
+    font-size: 14px;
+    color: #2d2d2d;
+    line-height: 24px;
+  }
+
+  li::before {
+    font-family: "Font Awesome 5 free";
+    content: "\f00c";
+    display: block;
+    color: #c7081b;
+    position: absolute;
+    font-weight: 900;
+    width: 0px;
+    height: 0px;
+    background-color: #c7081b;
+    left: 0;
+    top: 3px;
+  }
+}
+
+.Highlight {
+  margin: 20px 0;
+  h4 {
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #c7081b;
+    letter-spacing: -1.5px;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 2em;
+}
+
+.featured {
+  width: 100%;
+  ul {
+    grid-column-gap: 43px;
+  grid-row-gap: 70px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  display: grid;
+  margin: 0 auto;
+  }
+
+  li {
+    height: auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -1.4px;
+    margin-bottom: 7px;
+  }
+
+  img {
+    max-width: 100%;
+    height: 100px;
+    vertical-align: middle;
+    border-style: none;
+    padding: 11px 0;
+    color: #f0f0f0;
+    filter: grayscale(1);
+  }
+  
+
+  p {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  li:hover {
+    background-color: #c7081b;
+    color: #FFF;
+    filter:none;
+  }
+  
+}
+
+.Dealership {
+  .backroundshadow {
+    background-color:#ffffffba;
+    color: #2d2d2d;
+  }
+  .statistic-row{
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    display: grid;
+  } 
+
+  h1 {
+    color:#2d2d2d;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 40px;
+    font-size: clamp(20px, 50vw, 62px);
+    transition: all 0.4s ease-out;
+
+  }
+}
+
+.Dealership-Status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 52px 0!important;
+
+  fa-icon {
+    font-size: 40px;
+    color: #2d2d2d;
+  }
+
+  span {
+    margin:15px 0 !important;
+    font-size: 48px;
+    font-weight: 100;
+    color: #2d2d2d;
+  }
+
+  .number {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 200;
+    color: #2d2d2d;
+  }
+}
+
+section.deatails-section {
+  margin: 3em 0;
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #c7081b;
+    letter-spacing: -1.5px;
+  }
+}
+
+.row-service {
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      grid-template-rows: auto;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      grid-auto-flow: row;
+      display: grid;
+}
+
+.padding-right-left {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+.details{
+  h5 {
+    color: #2e2e2e;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -1.4px;
+  }
+
+  .padding-top-10 {
+    padding-top: 10px !important;
+}
+
+  p{
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  h5::before {
+      font-size: 34px;
+      font-family: "Font Awesome 5 free";
+      color: #c7081b;
+      vertical-align: middle;
+      margin-right: 15px;
+  }
+
+  .customize::before {
+    content: "\f0ad";
+    font-size: 34px;
+    font-family: "Font Awesome 5 free";
+    color: #c7081b;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+  
+  .awards::before  {
+      content: "\f091";
+  }
+
+  .music::before {
+    content: "\f001";
+  }
+
+  .work::before {
+    content: "\f0f4";
+  }
+
+  .ultra::before {
+    content:"\f0d1";
+  }
+
+  .flexible::before{
+    content: "\f013";
+  }
+
+}
+  
+
+@media screen and (max-width: 780px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .row {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+
+  .module_C{
+    height: auto !important;
+    width: 100%;
+  }
+
+  .Dealership {
+
+    .statistic-row{
+      grid-column-gap: 10px;
+      grid-template-rows: auto;
+      grid-template-columns:1fr 1fr;
+      grid-auto-columns: 1fr;
+      grid-auto-flow: row;
+      display: grid;
+    } 
+  
+    h1 {
+      color:#2d2d2d;
+      text-align: center;
+      font-weight: 100;
+      margin-top: 40px;
+      font-size: 49px;
+  
+    }
+
+    .Dealership-Status {
+
+      margin: 15px 0!important;
+
+      span {
+        margin:0 !important;
+        font-size: 50px;
+      }
+
+      .number {
+        font-size: 50px;
+      }
+
+    }
+    
+  }
+  
+
+  .row-service {
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-column-gap: 13px;
+    grid-row-gap: 17px;
+  }
+
+  .for-you,
+  .thing-to-consider {
+    padding: 0;
+  }
+
+  .featured {
+    ul {
+      grid-column-gap: 43px;
+    grid-row-gap: 70px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    display: grid;
+    padding: 0 40px;
+    margin: 0 auto;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .module_C{
+    height: auto !important;
+    width: 100%;
+  }
+  .Highlight {
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0;
+      
+    }
+  }
+
+  .row-service {
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-column-gap: 13px;
+    grid-row-gap: 17px;
+  }
+
+  .featured {
+  
+    ul {
+      grid-column-gap: 43px;
+    grid-row-gap: 70px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    display: grid;
+    padding: 40px;
+    margin: 0 auto;
+ 
+    }
+}
+
+.backroundshadow {
+  .statistic-row{
+  
+    grid-template-columns:1fr;
+    grid-auto-columns: 1fr;
+  } 
+
+  h1 {
+    padding: 0 12px;
+    font-size: 30px;
+
+  }
+}
+
+.Dealership-Status {
+  margin: 15px 0!important;
+  span {
+    margin:0 !important;
+    font-size: 40px;
+  }
+  .number {
+    font-size: 40px;
+  }
+}
+
+}

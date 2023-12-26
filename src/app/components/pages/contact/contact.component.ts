@@ -55,5 +55,5 @@ export class ContactComponent {
      );
      console.log("Formulario enviado com sucesso")
    }
-
+  
 }

@@ -1,6 +1,4 @@
-<div class="module_B wrap-image backround">
-  
-</div>
+<div class="module_B wrap-image backround"></div>
 <div>
   <h3>ENCONTRE-NOS NO MAPA</h3>
   <div class="mapouter">
@@ -10,77 +8,129 @@
         class="gmap_iframe"
         width="100%"
         src="https://maps.google.com/maps?width=969&amp;height=400&amp;hl=en&amp;q=keweseki&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-      ></iframe
-      ><a href="https://connectionsgame.org/">Connections NYT</a>
+      ></iframe>
+      <a href="https://connectionsgame.org/">Connections NYT</a>
     </div>
   </div>
 </div>
 
-
 <div class="form-wrap">
-  <div class="contact-us" data-aos="fade-right" data-aos-duration="1000">
+  <div class="contact-us">
     <h4>Contactos-nos</h4>
     <p>Tem dúvida? Estamos aqui para ajudar.</p>
     <p type="email">
       <fa-icon [icon]="faEnvelope"></fa-icon>
       <a id="Email" href="mailto:comercial@nidiorgrupo.com">
-        comercial@nidiorgrupo.com</a
-      >
+        comercialnidiorgrupo.com </a>
     </p>
     <p>
       <fa-icon [icon]="faPhone"></fa-icon>
-      <a href="+244925548888" target="_blank"> +244 925-548-888</a>
+      <a href="+244925548888" target="_blank">+244 925-548-888</a>
     </p>
     <address>
       <p>
-        <fa-icon [icon]="faLocationDot"></fa-icon> 1234 Rua Kikuxi, Cidade
-        Luanda, 29FG+9F
+        <fa-icon [icon]="faLocationDot"></fa-icon>
+        1234 Rua Kikuxi, Cidade Luanda, 29FG+9F
       </p>
     </address>
   </div>
   <div>
-    <form data-aos="fade-left" data-aos-duration="1000">
+    <form >
       <div class="fieldset">
         <div class="label-position">
           <label for="nome">Primeiro nome</label>
-          <input type="text" name="nome" id="nome" [(ngModel)]="nome" />
+          <input type="text" name="nome" id="nome" [(ngModel)]="nome" autocomplete="name" />
         </div>
-    
+
         <div class="label-position">
           <label for="sobreNome">Ultimo nome</label>
-          <input type="text" name="sobreNome" id="sobreNome" [(ngModel)]="sobreNome" />
+          <input
+            type="text"
+            name="sobreNome"
+            id="sobreNome"
+            [(ngModel)]="sobreNome"
+          />
         </div>
       </div>
-    
+
       <div class="fieldset">
         <div class="label-position">
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" [(ngModel)]="email" />
+          <input type="text" name="email" id="email" [(ngModel)]="email" autocomplete="email"/>
         </div>
-    
+
         <div class="label-position">
           <label for="Telefone">Telefone</label>
-          <input type="text" name="tel" id="Telefone" [(ngModel)]="tel" />
+          <input type="text" name="tel" id="Telefone" [(ngModel)]="tel" autocomplete="tel"/>
         </div>
       </div>
-    
+
+       <div class="topic">
+        <p>Escolhe um topico</p>
+        <select name="topic" id="topic">
+          <option value="1" [disabled]="true">Seleciona um...</option>
+          <option value="2">Reparação</option>
+          <option value="3">Reclamação</option>
+          <option value="4">Outros</option>
+        </select>
+      </div>
+      <div class="wrap-radio">
+        <p>O que melhor te descreve?</p>
+        <div>
+          <div class="fieldset-radio">
+            <div>
+              <div class="fieldset-radio-position">
+                <input type="radio" id="question" name="question" value="question" />
+                <label for="question">Perguntas de venda</label><br />
+              </div>
+              <div class="fieldset-radio-position">
+                <input type="radio" id="question2" name="question2" value="question2" />
+                <label for="question2">Questão de cobrança</label><br />
+              </div>
+              <div class="fieldset-radio-position">
+                <input type="radio" id="question3" name="question3" value="question3"/>
+                <label for="question3">Consulta Geral</label>
+              </div>
+            </div>
+            <div>
+              <div class="fieldset-radio-position">
+                <input type="radio" id="question4" name="question4" value="question4" />
+                <label for="question4">Suporte tecnico</label><br />
+              </div>
+              <div class="fieldset-radio-position">
+                <input type="radio" id="question5" name="question5" value="question5" />
+                <label for="question5">Feedback Produto</label><br />
+              </div>
+              <div class="fieldset-radio-position">
+                <input type="radio" id="question6" name="question6" value="question6"/>
+                <label for="question6">Outro</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       <div class="wrap-message">
         <p>Mensagem</p>
         <textarea
-          placeholder="Digite sua mensagem..."
-          maxlength="1000"
-          minlength="100"
-          rows="7"
-          id="conteudo"
-          name="conteudo"
-          [(ngModel)]="conteudo"
+        placeholder="Digite sua mensagem..."
+        maxlength="1000"
+        minlength="100"
+        rows="7"
+        id="conteudo"
+        name="conteudo"
+        [(ngModel)]="conteudo"
         ></textarea>
       </div>
-    
+      <div class="wrap-checkbox">
+        <label for="terms_according">Eu concordo com os termos</label>
+        <input type="checkbox" name="terms_according">
+      </div> 
+      
       <div class="wrap-button">
         <button type="submit" (click)="buttonClick()">Enviar</button>
       </div>
-    </form>    
-    
+    </form>
   </div>
 </div>

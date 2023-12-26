@@ -13,9 +13,17 @@ import * as AOS from 'aos'
 export class AppComponent {
   btntext='Submit'
   title = 'kewesekiNiodior';
+  loader =true
+  
   ngOnInit() {
     AOS.init()
     window.addEventListener('load',AOS.refresh)
+  
+
+    setTimeout(()=>{
+      this.loader = false;
+    }, 3000)
+  
   }
 //
   

@@ -8,4 +8,6 @@ import { faLink} from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent {
   faLink=faLink;
+
+  
 }
